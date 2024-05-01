@@ -1,2 +1,6 @@
 
 .DS_Store
+/Client/DNaNC-Client/bin/Debug/net8.0-windows10.0.19041.0/win10-x64
+/Client/.vs/Client
+/Client/DNaNC-Client/obj/Debug
+/Client/DNaNC-Client/obj
