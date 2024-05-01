@@ -1,9 +1,16 @@
+using DNaNC_Server.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+// Register NodeManagerService as a service
+builder.Services.AddSingleton<NodeManagerService>();
+
 var app = builder.Build();
+
+var nodeManager = app.Services.GetRequiredService<NodeManagerService>();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
