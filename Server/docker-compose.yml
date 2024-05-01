@@ -1,0 +1,6 @@
+﻿services:
+  dnanc-server:
+    image: dnanc-server
+    build:
+      context: .
+      dockerfile: DNaNC-Server/Dockerfile
