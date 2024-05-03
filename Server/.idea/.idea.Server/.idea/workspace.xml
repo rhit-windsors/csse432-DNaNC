@@ -9,17 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bab871c5-214f-4379-951f-18961be0baf8" name="Changes" comment="try again">
-      <change afterPath="$PROJECT_DIR$/DNaNC-Server/Controllers/NodeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/Models/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/Models/Node.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/Services/NodeManagerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/Services/NodeManagerService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.AssemblyInfoInputs.cache" afterDir="false" />
-    </list>
+    <list default="true" id="bab871c5-214f-4379-951f-18961be0baf8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +27,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/Riley/RiderProjects/csse432-DNaNC/Server/DNaNC-Server/Models/Node.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Riley/RiderProjects/csse432-DNaNC/Server/DNaNC-Server/Models/Node.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Riley/RiderProjects/csse432-DNaNC/Server/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -170,7 +161,7 @@
       <option name="presentableId" value="Default" />
       <updated>1714596667948</updated>
       <workItem from="1714596668462" duration="21000" />
-      <workItem from="1714596703431" duration="3674000" />
+      <workItem from="1714596703431" duration="3714000" />
     </task>
     <task id="LOCAL-00001" summary="try again">
       <option name="closed" value="true" />
@@ -180,7 +171,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714596724025</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update server, start client">
+      <option name="closed" value="true" />
+      <created>1714602366356</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714602366356</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add services">
+      <option name="closed" value="true" />
+      <created>1714602386548</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714602386548</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +198,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="try again" />
-    <option name="LAST_COMMIT_MESSAGE" value="try again" />
+    <MESSAGE value="update server, start client" />
+    <MESSAGE value="add services" />
+    <option name="LAST_COMMIT_MESSAGE" value="add services" />
   </component>
 </project>
