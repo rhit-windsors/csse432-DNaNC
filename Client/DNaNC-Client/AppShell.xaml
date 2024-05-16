@@ -8,7 +8,7 @@
     Title="DNaNC_Client">
 
     <ShellContent
-        Title="Home"
+        Title="DNaNC-Client"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

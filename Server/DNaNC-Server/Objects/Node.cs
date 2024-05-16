@@ -57,6 +57,11 @@ namespace DNaNC_Server.Objects
 
             return x == y;
         }
+        
+        public string GetNodeString()
+        {
+            return $"{this.Host}:{this.Port}";
+        }
 
         //TODO: Implement ToString
         

@@ -25,14 +25,20 @@ public static class NodeCleanup
                 TempPause = false;
             }
             
+            //If both nodes are the same and dead, then you are the only node in the network
+            if (NodeManager.Successor.Id == NodeManager.Predecessor.Id && !CheckNode(NodeManager.Successor))
+            {
+                NodeManager.Successor = NodeManager.LocalNode;
+                NodeManager.Predecessor = NodeManager.LocalNode;
+                NodeManager.SuccessorSuccessor = NodeManager.LocalNode;
+                NodeManager.PredecessorPredecessor = NodeManager.LocalNode;
+            }
+            
             //Check if your successor is still alive
             if (!CheckNode(NodeManager.Successor))
             {
                 //If not, set your successor to your successor's successor
-                NodeManager.Successor = NodeManager.SuccessorSuccessor;
-
-                //Set your new Successor's successor
-                NodeManager.SuccessorSuccessor = NodeManager.GetSuccessor(NodeManager.Successor);
+                NodeManager.Successor = FindNewSuccessor(NodeManager.LocalNode);
 
                 //Alert your new successor that you are its predecessor
                 NodeManager.AlertNodeJoin(NodeManager.Successor);
@@ -42,13 +48,11 @@ public static class NodeCleanup
             if (!CheckNode(NodeManager.Predecessor))
             {
                 //If not, set your predecessor to your predecessor's predecessor
-                NodeManager.Predecessor = NodeManager.PredecessorPredecessor;
-
-                //Set your new Predecessor's predecessor
-                NodeManager.PredecessorPredecessor = NodeManager.GetPredecessor(NodeManager.Predecessor);
+                NodeManager.Predecessor = FindNewPredecessor(NodeManager.LocalNode);
 
                 //The node will clean up the rest
             }
+
             
             //If all 4 are dead, assume you are the only node in the network
             if (!CheckNode(NodeManager.Successor) && !CheckNode(NodeManager.Predecessor) && !CheckNode(NodeManager.SuccessorSuccessor) && !CheckNode(NodeManager.PredecessorPredecessor))
@@ -105,5 +109,42 @@ public static class NodeCleanup
             return false;
         }
         
+    }
+    
+    private static Node FindNewSuccessor(Node inputNode)
+    {
+        try
+        {
+            var node = NodeManager.GetSuccessor(inputNode);
+            if (!CheckNode(node))
+            {
+                return inputNode;
+            }
+            return FindNewSuccessor(node);
+        }
+        catch
+        {
+            //If we died then the node is our new successor
+            return inputNode;
+        }
+    }
+    
+private static Node FindNewPredecessor(Node inputNode)
+    {
+        try
+        {
+            var node = NodeManager.GetSuccessor(inputNode);
+            if (!CheckNode(node))
+            {
+                return inputNode;
+            }
+
+            return FindNewPredecessor(node);
+        }
+        catch
+        {
+            //If we died then the node is our new predecessor
+            return inputNode;
+        }
     }
 }

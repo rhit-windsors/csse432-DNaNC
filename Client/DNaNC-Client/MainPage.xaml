@@ -7,10 +7,6 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            <Label
-                Text="DNaNC-Client"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
             
             <Button
                 x:Name="HostBtn"

@@ -10,25 +10,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bab871c5-214f-4379-951f-18961be0baf8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Objects/LocatedFile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/FileShare.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/NodeCleanup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/NodeManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/NodeServer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/ApplicationState/AppState.cs" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/DNaNC-Server/Controllers/NodesController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DNaNC-Server/Models/Nodes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DNaNC-Server/Views/Nodes/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/AppShell.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/AppShell.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/MainPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/MainPage.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/MainPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/MainPage.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/Objects/DHTManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/Objects/FingerTable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/Objects/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Objects/Node.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/ClientPulseService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/DHTCleanupService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/DHTService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/NodeCleanup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/NodeCleanup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/NodeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/NodeManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNaNC-Server/Controllers/NodeController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNaNC-Server/Models/Node.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNaNC-Server/Objects/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/Objects/Node.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNaNC-Server/Services/NodeCleanup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/Services/NodeCleanup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DNaNC-Server/Services/NodeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/Services/NodeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/Services/NodeServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/Services/NodeServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNaNC-Server/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNaNC-Server/bin/Debug/net8.0/DNaNC-Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/bin/Debug/net8.0/DNaNC-Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNaNC-Server/bin/Debug/net8.0/DNaNC-Server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/bin/Debug/net8.0/DNaNC-Server.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNaNC-Server/bin/Debug/net8.0/DNaNC-Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/bin/Debug/net8.0/DNaNC-Server.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/ref/DNaNC-Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/ref/DNaNC-Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/refint/DNaNC-Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/refint/DNaNC-Server.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,29 +66,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.DNaNC-Server: IIS Express.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.DNaNC-Server: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.DNaNC-Server: https.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.DNaNC-Server: IIS Express.executor": "Run",
+    ".NET Launch Settings Profile.DNaNC-Server: http.executor": "Run",
+    ".NET Launch Settings Profile.DNaNC-Server: https.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "XThreadsFramesViewSplitterKey": "0.4965358",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Riley\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Riley\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Riley\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Riley\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Riley\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\Riley\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.DNaNC-Server: http">
     <configuration name="DNaNC-Server: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/DNaNC-Server/DNaNC-Server.csproj" />
@@ -186,6 +195,7 @@
       <workItem from="1715224487579" duration="2710000" />
       <workItem from="1715803270303" duration="1385000" />
       <workItem from="1715832742656" duration="1260000" />
+      <workItem from="1715876568458" duration="3623000" />
     </task>
     <task id="LOCAL-00001" summary="try again">
       <option name="closed" value="true" />
@@ -234,5 +244,24 @@
     <MESSAGE value="add services" />
     <MESSAGE value="Update server" />
     <option name="LAST_COMMIT_MESSAGE" value="Update server" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/DNaNC-Server/Controllers/NodesController.cs</url>
+          <line>21</line>
+          <properties documentPath="C:\Users\Riley\RiderProjects\csse432-DNaNC\Server\DNaNC-Server\Controllers\NodesController.cs" containingFunctionPresentation="Method 'GetNodes'">
+            <startOffsets>
+              <option value="459" />
+            </startOffsets>
+            <endOffsets>
+              <option value="483" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

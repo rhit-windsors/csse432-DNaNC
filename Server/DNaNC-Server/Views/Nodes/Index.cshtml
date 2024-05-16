@@ -1,0 +1,32 @@
+﻿@using DNaNC_Server.Services
+@model Nodes
+@{
+ViewData["Title"] = "Nodes Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Nodes currently in the network</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Node ID</th>
+                <th>IP Address</th>
+                <th>Port</th>
+                <th>Predecessor</th>
+                <th>Successor</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var node in Model.NodeList)
+            {
+                <tr>
+                    <td>@node.Id</td>
+                    <td>@node.Host</td>
+                    <td>@node.Port</td>
+                    <td>@NodeManager.GetPredecessor(node)?.GetNodeString()</td>
+                    <td>@NodeManager.GetSuccessor(node)?.GetNodeString()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

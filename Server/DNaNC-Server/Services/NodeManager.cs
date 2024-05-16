@@ -22,6 +22,9 @@ public static class NodeManager
         Successor = LocalNode;
         //Set the Predecessor
         Predecessor = LocalNode;
+        
+        //Start cleanup
+        _ = Task.Run(NodeCleanup.Cleanup);
     }
 
     public static void Query(string fileName, Node node)
@@ -109,10 +112,11 @@ public static class NodeManager
         {
             byteStore.AddRange(buffer);
             //Check if the EOF is reached
-            if(Encoding.UTF8.GetString(buffer).Contains("EOF"))
+            if(Encoding.UTF8.GetString(buffer).Contains("_EOF"))
             {
                 break;
             }
+            buffer = new byte[1024];
         }
         
         client.Close();
@@ -122,12 +126,20 @@ public static class NodeManager
         fileData = fileData.Replace("\0", "").Replace("_EOF", "");
         var fileBytes = Convert.FromBase64String(fileData);
         
+        //Save in downloads folder
+        var downloadsPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + Path.DirectorySeparatorChar + "Downloads" + Path.DirectorySeparatorChar;
+        
         //Write the file
-        File.WriteAllBytes(file.FileName, fileBytes);
+        File.WriteAllBytes(downloadsPath + file.FileName, fileBytes);
     }
     
     public static void Join(string host, int port, int localPort)
     {
+        if (host == "127.0.0.1" || host == "localhost")
+        {
+            host = GetPublicIP();
+        }
+        
         var node = new Node(host, port);
         
         //Set the local node

@@ -22,6 +22,9 @@ public static class NodeManager
         Successor = LocalNode;
         //Set the Predecessor
         Predecessor = LocalNode;
+        
+        //Start cleanup
+        _ = Task.Run(NodeCleanup.Cleanup);
     }
 
     public static void Query(string fileName, Node node)
@@ -132,6 +135,11 @@ public static class NodeManager
     
     public static void Join(string host, int port, int localPort)
     {
+        if (host == "127.0.0.1" || host == "localhost")
+        {
+            host = GetPublicIP();
+        }
+        
         var node = new Node(host, port);
         
         //Set the local node
