@@ -10,13 +10,13 @@ namespace DNaNC_Server.Controllers;
 [ApiController]
 public class NodeController
 {
-    private readonly NodeManagerService _nodeManagerService;
     
-    public NodeController(NodeManagerService nodeManagerService)
+    public NodeController()
     {
-        _nodeManagerService = nodeManagerService;
     }
     
+    [HttpGet]
+    [Route("register")]
     public IResult RegisterNode(string host, int port)
     {
         var node = new Node
@@ -25,9 +25,11 @@ public class NodeController
             Port = port
         };
 
-        return _nodeManagerService.RegisterNode(node) ? Results.Ok() : Results.BadRequest();
+        return null;
     }
     
+    [HttpGet]
+    [Route("unregister")]
     public IResult UnregisterNode(string host, int port)
     {
         var node = new Node
@@ -36,6 +38,6 @@ public class NodeController
             Port = port
         };
 
-        return _nodeManagerService.UnregisterNode(node) ? Results.Ok() : Results.BadRequest();
+        return null;
     }
 }

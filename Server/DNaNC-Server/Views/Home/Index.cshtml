@@ -1,26 +1,8 @@
 ﻿@using DNaNC_Server.Services
-@inject NodeManagerService NodeManagerService
 @{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Nodes</h1>
-    <table class="table">
-        <tr>
-            <th>Host</th>
-            <th>Port</th>
-            <th>Manage</th>
-        </tr>
-        @foreach (var node in NodeManagerService.GetNodes())
-        {
-            <tr>
-                <td>@node.Host</td>
-                <td>@node.Port</td>
-                <td>
-                    <button type="button" class="btn btn-danger">Ban</button>
-                </td>
-            </tr>
-        }
-    </table>
+    <h1 class="display-4">This seed node is running on port: @(NodeManager.LocalNode.Port)</h1>
 </div>

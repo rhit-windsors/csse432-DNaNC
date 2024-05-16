@@ -57,13 +57,13 @@ namespace DNaNC_Client.Services
             {
                 try
                 {
-                    tcpClient.Connect("127.0.0.1", 9081);
+                    tcpClient.Connect("127.0.0.1", port);
                     tcpClient.Close();
-                    return true;
+                    return false;
                 }
                 catch (Exception)
                 {
-                    return false;
+                    return true;
                 }
             }
         }
