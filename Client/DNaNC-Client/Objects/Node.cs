@@ -31,10 +31,40 @@ namespace DNaNC_Client.Objects
             return BitConverter.ToUInt64(hash, 0);
         }
         
-        //TODO: Implement Compare
+        //DONE: Implement Compare
+        public static int Compare(Node? x, Node? y)
+        {
+            if (x == null && y == null)
+            {
+                return 0;
+            }
+            if (x == null)
+            {
+                return -1;
+            }
+            if (y == null)
+            {
+                return 1;
+            }
+            return x.Id.CompareTo(y.Id);
+        }
         
-        //TODO: Implement Equals
-        
+        //DONE: Implement Equals
+        public static bool Equals(Node? x, Node? y)
+        {
+            if (x == null && y == null)
+            {
+                return true;
+            }
+
+            if (x == null || y == null)
+            {
+                return false;
+            }
+
+            return x == y;
+        }
+
         //TODO: Implement ToString
         
         //TODO: Implement GetHashCode

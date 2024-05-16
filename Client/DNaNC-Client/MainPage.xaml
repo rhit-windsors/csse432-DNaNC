@@ -12,41 +12,100 @@
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
             
+            <Button
+                x:Name="HostBtn"
+                Text="Click to host" 
+                Clicked="OnHostClicked"
+                HorizontalOptions="Fill" 
+                IsVisible="True"/>
+            
             <Entry
                 x:Name="HostEntry"
-                Placeholder="Enter a node in the cluster, or the server's IP address"
-                HorizontalOptions="Fill" />
+                Placeholder="Enter an ip of a node in the cluster"
+                HorizontalOptions="Fill" 
+                IsVisible="True"/>
             
             <Entry
                 x:Name="PortEntry"
-                Placeholder="Enter the nodes port, or the server's port"
-                HorizontalOptions="Fill" />
-            
-            <HorizontalStackLayout>
-                <Label
-                    Text="Is Node:"
-                    />
-                <CheckBox
-                    x:Name="IsNodeCheckBox"/>
-            </HorizontalStackLayout>
+                Placeholder="Enter the nodes port"
+                HorizontalOptions="Fill" 
+                IsVisible="True"/>
             
             <Button
                 x:Name="RegisterBtn"
                 Text="Click to Register" 
                 Clicked="OnRegisterClicked"
-                HorizontalOptions="Fill" />
+                HorizontalOptions="Fill" 
+                IsVisible="True"/>
             
             <Button
-                x:Name="UnRegisterBtn"
-                Text="Click to Unregister" 
-                Clicked="OnUnregisterClicked"
-                HorizontalOptions="Fill" />
+                x:Name="LeaveBtn"
+                Text="Click to Leave" 
+                Clicked="OnLeaveClicked"
+                HorizontalOptions="Fill" 
+                IsVisible="False"/>
+            
+            <Label
+                x:Name="PortLabel"
+                Text="Register: None"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"/>
             
             <Label
                 x:Name="StatusLabel"
                 Text="Status: None"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"/>
+            
+            <Button
+                x:Name="ShareFileBtn"
+                Text="Click to share a file with the cluster" 
+                Clicked="OnShareClicked"
+                HorizontalOptions="Fill" 
+                IsVisible="False"/>
+            
+            <Label
+                x:Name="SharedFilesLabel"
+                Text="Shared Files: None"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                IsVisible="False"/>
+            
+            <HorizontalStackLayout>
+                <Entry
+                    x:Name="SearchEntry"
+                    Placeholder="Enter a file name to search for"
+                    HorizontalOptions="Fill" 
+                    IsVisible="False"/>
+                <Button
+                    x:Name="SearchBtn"
+                    Text="Click to search" 
+                    Clicked="OnSearchClicked"
+                    HorizontalOptions="Fill" 
+                    IsVisible="False"/>
+            </HorizontalStackLayout>
+            
+            <Label
+                x:Name="LocatedFilesLabel"
+                Text="Located Files: None"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                IsVisible="False"/>
+            
+            <HorizontalStackLayout>
+                <Entry
+                    x:Name="IndexEntry"
+                    Placeholder="Enter the index of the file you wish to retrieve"
+                    HorizontalOptions="Fill" 
+                    IsVisible="False"/>
+                <Button
+                    x:Name="GetBtn"
+                    Text="Click to search" 
+                    Clicked="OnGetClicked"
+                    HorizontalOptions="Fill" 
+                    IsVisible="False"/>
+            </HorizontalStackLayout>
+            
         </VerticalStackLayout>
     </ScrollView>
 

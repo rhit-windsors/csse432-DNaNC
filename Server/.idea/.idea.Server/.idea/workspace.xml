@@ -10,39 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bab871c5-214f-4379-951f-18961be0baf8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/ApplicationState/AppState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Objects/DHTManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Objects/FingerTable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/DHTCleanupService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/DHTService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DNaNC-Server/Objects/LocatedFile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DNaNC-Server/Objects/Node.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DNaNC-Server/Services/FileShare.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DNaNC-Server/Services/NodeCleanup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DNaNC-Server/Services/NodeManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DNaNC-Server/Services/NodeServer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Objects/LocatedFile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/FileShare.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/NodeCleanup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/NodeManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/NodeServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/ApplicationState/AppState.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/MainPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/MainPage.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/MainPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/MainPage.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/Objects/DHTManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/Objects/FingerTable.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/Objects/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Objects/Node.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/ClientPulseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/ClientPulseService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/ClientPulseService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/DHTCleanupService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client/DNaNC-Client/Services/DHTService.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/Controllers/NodeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/Controllers/NodeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/Services/NodeManagerService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/bin/Debug/net8.0/DNaNC-Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/bin/Debug/net8.0/DNaNC-Server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/bin/Debug/net8.0/DNaNC-Server.exe" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/bin/Debug/net8.0/DNaNC-Server.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/bin/Debug/net8.0/DNaNC-Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/bin/Debug/net8.0/DNaNC-Server.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNaNC-Server/Services/NodeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/Services/NodeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DNaNC-Server/Services/NodeServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/Services/NodeServer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/DNaNC-Server.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/ref/DNaNC-Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/ref/DNaNC-Server.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/refint/DNaNC-Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DNaNC-Server/obj/Debug/net8.0/refint/DNaNC-Server.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +184,8 @@
       <workItem from="1714596703431" duration="3714000" />
       <workItem from="1715223061461" duration="929000" />
       <workItem from="1715224487579" duration="2710000" />
-      <workItem from="1715803270303" duration="1023000" />
+      <workItem from="1715803270303" duration="1385000" />
+      <workItem from="1715832742656" duration="1260000" />
     </task>
     <task id="LOCAL-00001" summary="try again">
       <option name="closed" value="true" />
@@ -224,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714602386548</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update server">
+      <option name="closed" value="true" />
+      <created>1715832062736</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715832062736</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +232,7 @@
     <MESSAGE value="try again" />
     <MESSAGE value="update server, start client" />
     <MESSAGE value="add services" />
-    <option name="LAST_COMMIT_MESSAGE" value="add services" />
+    <MESSAGE value="Update server" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update server" />
   </component>
 </project>

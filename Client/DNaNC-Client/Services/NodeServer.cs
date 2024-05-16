@@ -2,9 +2,9 @@
 using System.Net.Sockets;
 using System.Text;
 using System.Text.Json;
-using DNaNC_Server.Objects;
+using DNaNC_Client.Objects;
 
-namespace DNaNC_Server.Services;
+namespace DNaNC_Client.Services;
 
 public static class NodeServer
 {
@@ -282,14 +282,19 @@ public static class NodeServer
             //Get the file
             var file = FileShare.SharedFiles.FirstOrDefault(f => f.Name.Contains(fileName));
             
-            var messageToSend = Encoding.UTF8.GetBytes(Convert.ToBase64String(File.ReadAllBytes(file.FullName)) + "_EOF");
+            var messageToSend = Encoding.UTF8.GetBytes(Convert.ToBase64String(File.ReadAllBytes(file.FullName)));
             
             //Send the file
             int totalLength = messageToSend.Length;
             int bytesSent = 0;
-            while (bytesSent < totalLength)
+            while (bytesSent <= totalLength)
             {
-                bytesSent += client.Client.Send(messageToSend, bytesSent, totalLength - bytesSent, SocketFlags.None);
+                if(totalLength - bytesSent < 1024)
+                {
+                    client.Client.Send(messageToSend, bytesSent, totalLength - bytesSent, SocketFlags.None);
+                    break;
+                }
+                bytesSent += client.Client.Send(messageToSend, bytesSent, 1024, SocketFlags.None);
             }
         }
         

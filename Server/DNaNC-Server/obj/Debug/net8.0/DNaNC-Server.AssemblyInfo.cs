@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DNaNC-Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69e7f8faa14ace9c94d6da8db21f53f44251413e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2d19808bfb7fb9db10e64f654f647acfa0adaba")]
 [assembly: System.Reflection.AssemblyProductAttribute("DNaNC-Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DNaNC-Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
